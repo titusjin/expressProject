@@ -29,7 +29,7 @@ app.use(logger('dev'))
 .use(cookieParser())
 .use(express.static(path.join(__dirname, 'public')))
 //no cache
-.use(function(req, res, next){
+.use((req, res, next) => {
   res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
   res.header('Expires', '-1');
   res.header('Pragma', 'no-cache');

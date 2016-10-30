@@ -46,10 +46,23 @@ var earthquakeFeedGenerator = (function(){
     result.getEqRowData = function(uri){
         return new Promise((resolve, reject) => {
             // change to use wget instead of http request accoding to open-api change
-            this.wgetData(uri)
-                    .then(function(data){
-                        resolve(data);
-                    });
+            // this.wgetData(uri)
+            //         .then(function(data){
+            //             resolve(data);
+            //         });
+            wget({
+                    url: uri,
+                    timeout: 2000       // duration to wait for request fulfillment in milliseconds, default is 2 seconds
+                },function (error, response, body) {
+                    if (error) {
+                        Logger.error(error);        // error encountered
+                    } else {
+                        resolve(body);
+                    }
+                }
+            );
+
+
 
             // const options = {
             //     uri : uri,
