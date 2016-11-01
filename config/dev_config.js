@@ -23,7 +23,8 @@ module.exports = {
             article_api_host: 'http://localhost:3010/',
         },
         openapi:{
-            eq_api_host: 'http://opendata.cwb.gov.tw/govdownload?dataid=E-A0016-001R&authorizationkey=rdec-key-123-45678-011121314'
+            eq_api_host: 'http://opendata.cwb.gov.tw/govdownload?dataid=E-A0016-001R&authorizationkey=rdec-key-123-45678-011121314',
+            aqx_api_host: 'http://opendata2.epa.gov.tw/AQX.json'
         },
         ftpServer : {
             ftp_test: {

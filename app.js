@@ -35,8 +35,8 @@ app.use(logger('dev'))
   res.header('Pragma', 'no-cache');
   next();
 })
-.use('/eqfeed', require('./routes/eqfeed'));       // 地震資料
-// .use('/aqxfeed' require('./routes/aqxfeed'));     // 空污資料
+.use('/eqfeed', require('./routes/eqfeed'))       // 地震資料
+.use('/aqxfeed', require('./routes/aqxfeeds'));      // 空污資料
 
 
 // catch 404 and forward to error handler
