@@ -93,20 +93,37 @@ var earthquakeFeedGenerator = (function(){
 
     result.makeRSSFeed = (opendata) => {
         var dataSet = opendata.dataset[0];
+        var re = /^(.*:)\/\/([A-Za-z0-9\-\.]+)(:[0-9]+)?(.*)$/;
+        var regSplit = dataSet.earthquake[0].web[0].match(re);
 
         return new Promise(function(resolve, reject){
             try{
                 var xml = [
                     {rss: [
                             {_attr: {
-                                    "version": "2.0"
+                                    "version": "2.0",
+                                    "xmlns:dc"     : "http://purl.org/dc/elements/1.1/"
                                 }
                             },
                             {channel :[
                                 {title : dataSet.datasetInfo[0].datasetDescription[0].replace(/(\{|\}|(\r?\n))/g, '')},
+                                {description : "earthquake rss feed"},
+                                {link : {_cdata: regSplit[1] + "//" + regSplit[2] }},
+                                {pubDate :
+                                    moment(dataSet.datasetInfo[0].issueTime[0]).format('ddd, DD MMM YYYY HH:mm:ss ZZ')
+                                },
                                 {item : [
                                             {title :dataSet.earthquake[0].reportType[0].replace(/(\{|\}|(\r?\n))/g, '')},
-                                            {link  : dataSet.earthquake[0].web[0]},
+                                            {link  :
+                                                {_cdata: dataSet.earthquake[0].web[0]}
+                                            },
+                                            {description : {_cdata:"<img class=\"editorial\" src=\"" + dataSet.earthquake[0].reportImageURI[0] + "\" width=\"600\" height=\"400\" align=\"middle\">"
+                                                        + dataSet.earthquake[0].reportContent[0].replace(/<img/,"<img class=\"editorial\" style=\"max-width:600px\" align=\"middle\"")
+                                                        .replace(/\r?\n/g, "")
+                                                        .replace(/<(a|\/a)("[^"]*"|'[^']*'|[^'">]|)*>/g, "")
+                                                        .replace(/<iframe/g, "<iframe style=\"max-width:600px\"")
+                                                    }
+                                            },
                                             {guid  : [{
                                                         _attr : {
                                                             "isPermaLink" : "false"
@@ -114,16 +131,7 @@ var earthquakeFeedGenerator = (function(){
                                                        opendata.identifier[0]
                                                      ]
                                             },
-                                            {description : dataSet.datasetInfo[0].datasetDescription[0].replace(/(\{|\}|(\r?\n))/g, '')
-                                            },
-                                            {pubDate : moment(dataSet.datasetInfo[0].issueTime[0]).format('YYYY/MM/DD hh:mm')
-                                            },
-                                            {"content" :
-                                                {_cdata: "<img class=\"editorial\" src=\"" + dataSet.earthquake[0].reportImageURI[0] + "\" width=\"600\" height=\"400\" align=\"middle\">" + dataSet.earthquake[0].reportContent[0].replace(/<img/,"<img class=\"editorial\" style=\"max-width:600px\" align=\"middle\"").replace(/\r?\n/g, "").replace(/<(a|\/a)("[^"]*"|'[^']*'|[^'">]|)*>/g, "").replace(/<iframe/g, "<iframe style=\"max-width:600px\"") + "</p>"
-                                                }
-                                            },
-                                            {"image" : dataSet.earthquake[0].reportImageURI[0]
-                                            }
+                                            {"dc:creator" : dataSet.earthquake[0].earthquakeInfo[0].source[0]}
                                         ]
                                 }]
                             }
