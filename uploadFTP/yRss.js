@@ -12,7 +12,7 @@ const appRoot = require('app-root-path');
 const Fs = require('fs');
 const FTP = require('ftp');
 const XML = require('xml');
-const Helper = require(appRoot + '/lib/helper_lib');
+// const Helper = require(appRoot + '/lib/helper_lib');
 const _ = require('lodash');
 
 const Promise = require('promise');
@@ -25,7 +25,7 @@ const moment = require('moment');
 const configPrefix = process.env.NODE_ENV === 'development' ? (process.env.NODE_DEV === 'local' ? 'loc_' : 'dev_') : '';
 const Config = require(appRoot + '/config/' + configPrefix + 'config');
 
-var Logger = Helper.logger('rss_upload');
+// var Logger = Helper.logger('rss_upload');
 const ARTICLE_API_HOST = Config.rss.article_api_host;
 
 const FEED_NID_EXCESS = Config.rss.feed_nid_excess; //16000000
@@ -38,11 +38,12 @@ var interval;
 var feeds = [];
 
 function writelog(message){
-    Logger.trace(message);
+    // Logger.trace(message);
+    console.log(message);
 }
 
 function errorHandle(err){
-    Logger.error(new Error(err));
+    // Logger.error(new Error(err));
 }
 
 function get_file_id(nid){

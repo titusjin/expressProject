@@ -22,7 +22,7 @@ const wget = require('node-wget');
 const configPrefix = process.env.NODE_ENV === 'development' ? (process.env.NODE_DEV === 'local' ? 'loc_' : 'dev_') : '';
 const Config = require(appRoot + '/config/' + configPrefix + 'config');
 
-var Logger = Helper.logger('earthQuake_RSS_Feed');
+// var Logger = Helper.logger('earthQuake_RSS_Feed');
 
 var earthquakeFeedGenerator = (function(){
     var result = {};
@@ -35,6 +35,7 @@ var earthquakeFeedGenerator = (function(){
                 },function (error, response, body) {
                     if (error) {
                         Logger.error(error);        // error encountered
+                        console.error(error);
                     } else {
                         resolve(body);
                     }
@@ -55,7 +56,8 @@ var earthquakeFeedGenerator = (function(){
                     timeout: 2000       // duration to wait for request fulfillment in milliseconds, default is 2 seconds
                 },function (error, response, body) {
                     if (error) {
-                        Logger.error(error);        // error encountered
+                        // Logger.error(error);        // error encountered
+                        console.error(errr);
                     } else {
                         resolve(body);
                     }

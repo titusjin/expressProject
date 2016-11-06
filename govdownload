@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <cwbopendata xmlns="urn:cwb:gov:tw:cwbcommon:0.1">
-  <identifier>CWB-EQ105000-2016-1029-140816</identifier>
+  <identifier>CWB-EQ105000-2016-1103-174246</identifier>
   <sender>CWB_SC@scman.cwb.gov.tw</sender>
-  <sent>2016-10-31T14:20:52+08:00</sent>
+  <sent>2016-11-03T17:44:19+08:00</sent>
   <status>Actual</status>
   <msgType>Issue</msgType>
   <source>CWB</source>
@@ -11,24 +11,24 @@
     <datasetInfo>
       <datasetDescription>地震報告</datasetDescription>
       <datasetLanguage>zh-TW</datasetLanguage>
-      <issueTime>2016-10-31T14:20:52+08:00</issueTime>
-      <validTime><endTime>2016-10-31T22:20:52+08:00</endTime></validTime>
+      <issueTime>2016-11-03T17:44:19+08:00</issueTime>
+      <validTime><endTime>2016-11-04T01:44:19+08:00</endTime></validTime>
     </datasetInfo>
     <earthquake>
       <reportType>地震報告</reportType>
       <earthquakeNo>105000</earthquakeNo>
-      <reportContent>10/29-14:08宜蘭縣南澳鄉發生規模3.6有感地震，最大震度宜蘭縣南澳3級。</reportContent>
+      <reportContent>11/03-17:42花蓮縣秀林鄉發生規模3.6有感地震，最大震度花蓮縣銅門3級。</reportContent>
       <reportColor>綠色</reportColor>
-      <web>http://scweb.cwb.gov.tw/GraphicContent.aspx?ItemId=49&amp;fileString=2016102914081636</web>
-      <reportImageURI>http://scweb.cwb.gov.tw/webdata/OLDEQ/201610/2016102914081636.gif</reportImageURI>
+      <web>http://scweb.cwb.gov.tw/GraphicContent.aspx?ItemId=49&amp;fileString=2016110317424636</web>
+      <reportImageURI>http://scweb.cwb.gov.tw/webdata/OLDEQ/201611/2016110317424636.gif</reportImageURI>
       <earthquakeInfo>
-        <originTime>2016-10-29T14:08:16+08:00</originTime>
+        <originTime>2016-11-03T17:42:46+08:00</originTime>
         <epicenter>
-          <epicenterLon unit="度">121.73</epicenterLon>
-          <epicenterLat unit="度">24.39</epicenterLat>
-          <location>宜蘭縣政府南方  38.2  公里 (位於宜蘭縣南澳鄉)</location>
+          <epicenterLon unit="度">121.48</epicenterLon>
+          <epicenterLat unit="度">23.93</epicenterLat>
+          <location>花蓮縣政府西偏南方  16.3  公里 (位於花蓮縣秀林鄉)</location>
         </epicenter>
-        <depth unit="公里">18.6</depth>
+        <depth unit="公里">18.8</depth>
         <magnitude>
           <magnitudeType>芮氏規模</magnitudeType>
           <magnitudeValue>3.6</magnitudeValue>
@@ -37,88 +37,97 @@
       </earthquakeInfo>
       <intensity>
         <shakingArea>
-          <areaDesc>宜蘭縣地區</areaDesc>
-          <areaName>宜蘭縣</areaName>
+          <areaDesc>花蓮縣地區</areaDesc>
+          <areaName>花蓮縣</areaName>
           <areaIntensity unit="級">3</areaIntensity>
           <infoStatus>observe</infoStatus>
           <eqStation>
-            <stationName>南澳</stationName>
-            <stationCode>ENA</stationCode>
-            <stationLon unit="度">121.75</stationLon>
-            <stationLat unit="度">24.43</stationLat>
-            <distance unit="公里">4.64</distance>
-            <azimuth unit="度">204.11</azimuth>
+            <stationName>銅門</stationName>
+            <stationCode>ETM</stationCode>
+            <stationLon unit="度">121.49</stationLon>
+            <stationLat unit="度">23.97</stationLat>
+            <distance unit="公里">4.59</distance>
+            <azimuth unit="度">203.25</azimuth>
             <stationIntensity unit="級">3</stationIntensity>
             <pga unit="gal">
-              <vComponent>3.71</vComponent>
-              <nsComponent>9.15</nsComponent>
-              <ewComponent>10.95</ewComponent>
+              <vComponent>7.12</vComponent>
+              <nsComponent>16.57</nsComponent>
+              <ewComponent>15.37</ewComponent>
             </pga>
             <infoStatus>observe</infoStatus>
           </eqStation>
           <eqStation>
-            <stationName>蘇澳</stationName>
-            <stationCode>TWC</stationCode>
-            <stationLon unit="度">121.86</stationLon>
-            <stationLat unit="度">24.61</stationLat>
-            <distance unit="公里">27.75</distance>
-            <azimuth unit="度">208.14</azimuth>
-            <stationIntensity unit="級">1</stationIntensity>
+            <stationName>壽豐</stationName>
+            <stationCode>ESF</stationCode>
+            <stationLon unit="度">121.51</stationLon>
+            <stationLat unit="度">23.87</stationLat>
+            <distance unit="公里">7.11</distance>
+            <azimuth unit="度">332.44</azimuth>
+            <stationIntensity unit="級">3</stationIntensity>
             <pga unit="gal">
-              <vComponent>0.72</vComponent>
-              <nsComponent>1.32</nsComponent>
-              <ewComponent>1.32</ewComponent>
+              <vComponent>8.97</vComponent>
+              <nsComponent>19.26</nsComponent>
+              <ewComponent>19.02</ewComponent>
             </pga>
             <infoStatus>observe</infoStatus>
           </eqStation>
           <eqStation>
-            <stationName>羅東</stationName>
-            <stationCode>NLD</stationCode>
-            <stationLon unit="度">121.77</stationLon>
-            <stationLat unit="度">24.67</stationLat>
-            <distance unit="公里">31.99</distance>
-            <azimuth unit="度">187.73</azimuth>
-            <stationIntensity unit="級">1</stationIntensity>
+            <stationName>吉安</stationName>
+            <stationCode>EGA</stationCode>
+            <stationLon unit="度">121.56</stationLon>
+            <stationLat unit="度">23.97</stationLat>
+            <distance unit="公里">10.25</distance>
+            <azimuth unit="度">240.51</azimuth>
+            <stationIntensity unit="級">3</stationIntensity>
             <pga unit="gal">
-              <vComponent>0.30</vComponent>
-              <nsComponent>0.54</nsComponent>
-              <ewComponent>0.84</ewComponent>
+              <vComponent>4.55</vComponent>
+              <nsComponent>14.12</nsComponent>
+              <ewComponent>17.29</ewComponent>
             </pga>
             <infoStatus>observe</infoStatus>
           </eqStation>
           <eqStation>
-            <stationName>南山</stationName>
-            <stationCode>NNS</stationCode>
-            <stationLon unit="度">121.38</stationLon>
-            <stationLat unit="度">24.44</stationLat>
-            <distance unit="公里">35.83</distance>
-            <azimuth unit="度">98.88</azimuth>
-            <stationIntensity unit="級">1</stationIntensity>
+            <stationName>西林</stationName>
+            <stationCode>ESL</stationCode>
+            <stationLon unit="度">121.44</stationLon>
+            <stationLat unit="度">23.81</stationLat>
+            <distance unit="公里">13.28</distance>
+            <azimuth unit="度">14.88</azimuth>
+            <stationIntensity unit="級">3</stationIntensity>
             <pga unit="gal">
-              <vComponent>0.18</vComponent>
-              <nsComponent>0.90</nsComponent>
-              <ewComponent>0.54</ewComponent>
+              <vComponent>2.63</vComponent>
+              <nsComponent>8.55</nsComponent>
+              <ewComponent>11.36</ewComponent>
             </pga>
             <infoStatus>observe</infoStatus>
           </eqStation>
-        </shakingArea>
-        <shakingArea>
-          <areaDesc>花蓮縣地區</areaDesc>
-          <areaName>花蓮縣</areaName>
-          <areaIntensity unit="級">2</areaIntensity>
-          <infoStatus>observe</infoStatus>
           <eqStation>
-            <stationName>和平</stationName>
-            <stationCode>EHP</stationCode>
-            <stationLon unit="度">121.75</stationLon>
-            <stationLat unit="度">24.31</stationLat>
-            <distance unit="公里">9.09</distance>
-            <azimuth unit="度">347.98</azimuth>
+            <stationName>鹽寮</stationName>
+            <stationCode>EYL</stationCode>
+            <stationLon unit="度">121.60</stationLon>
+            <stationLat unit="度">23.90</stationLat>
+            <distance unit="公里">13.20</distance>
+            <azimuth unit="度">281.54</azimuth>
             <stationIntensity unit="級">2</stationIntensity>
             <pga unit="gal">
-              <vComponent>2.09</vComponent>
-              <nsComponent>2.81</nsComponent>
-              <ewComponent>2.99</ewComponent>
+              <vComponent>1.97</vComponent>
+              <nsComponent>3.05</nsComponent>
+              <ewComponent>3.65</ewComponent>
+            </pga>
+            <infoStatus>observe</infoStatus>
+          </eqStation>
+          <eqStation>
+            <stationName>花蓮市</stationName>
+            <stationCode>HWA</stationCode>
+            <stationLon unit="度">121.61</stationLon>
+            <stationLat unit="度">23.98</stationLat>
+            <distance unit="公里">15.06</distance>
+            <azimuth unit="度">249.42</azimuth>
+            <stationIntensity unit="級">2</stationIntensity>
+            <pga unit="gal">
+              <vComponent>3.11</vComponent>
+              <nsComponent>5.14</nsComponent>
+              <ewComponent>4.61</ewComponent>
             </pga>
             <infoStatus>observe</infoStatus>
           </eqStation>
@@ -127,26 +136,118 @@
             <stationCode>ETL</stationCode>
             <stationLon unit="度">121.62</stationLon>
             <stationLat unit="度">24.16</stationLat>
-            <distance unit="公里">27.70</distance>
-            <azimuth unit="度">23.17</azimuth>
+            <distance unit="公里">29.70</distance>
+            <azimuth unit="度">210.46</azimuth>
+            <stationIntensity unit="級">2</stationIntensity>
+            <pga unit="gal">
+              <vComponent>1.79</vComponent>
+              <nsComponent>5.50</nsComponent>
+              <ewComponent>4.55</ewComponent>
+            </pga>
+            <infoStatus>observe</infoStatus>
+          </eqStation>
+          <eqStation>
+            <stationName>秀林</stationName>
+            <stationCode>TWD</stationCode>
+            <stationLon unit="度">121.60</stationLon>
+            <stationLat unit="度">24.08</stationLat>
+            <distance unit="公里">21.55</distance>
+            <azimuth unit="度">217.79</azimuth>
             <stationIntensity unit="級">1</stationIntensity>
             <pga unit="gal">
-              <vComponent>0.42</vComponent>
+              <vComponent>1.20</vComponent>
+              <nsComponent>1.14</nsComponent>
+              <ewComponent>1.02</ewComponent>
+            </pga>
+            <infoStatus>observe</infoStatus>
+          </eqStation>
+          <eqStation>
+            <stationName>光復</stationName>
+            <stationCode>EGF</stationCode>
+            <stationLon unit="度">121.48</stationLon>
+            <stationLat unit="度">23.68</stationLat>
+            <distance unit="公里">26.97</distance>
+            <azimuth unit="度">358.38</azimuth>
+            <stationIntensity unit="級">1</stationIntensity>
+            <pga unit="gal">
+              <vComponent>0.54</vComponent>
               <nsComponent>1.14</nsComponent>
               <ewComponent>0.90</ewComponent>
+            </pga>
+            <infoStatus>observe</infoStatus>
+          </eqStation>
+          <eqStation>
+            <stationName>紅葉</stationName>
+            <stationCode>EHY</stationCode>
+            <stationLon unit="度">121.33</stationLon>
+            <stationLat unit="度">23.50</stationLat>
+            <distance unit="公里">49.34</distance>
+            <azimuth unit="度">17.68</azimuth>
+            <stationIntensity unit="級">1</stationIntensity>
+            <pga unit="gal">
+              <vComponent>0.36</vComponent>
+              <nsComponent>0.66</nsComponent>
+              <ewComponent>0.84</ewComponent>
+            </pga>
+            <infoStatus>observe</infoStatus>
+          </eqStation>
+        </shakingArea>
+        <shakingArea>
+          <areaDesc>南投縣地區</areaDesc>
+          <areaName>南投縣</areaName>
+          <areaIntensity unit="級">2</areaIntensity>
+          <infoStatus>observe</infoStatus>
+          <eqStation>
+            <stationName>合歡山</stationName>
+            <stationCode>WHF</stationCode>
+            <stationLon unit="度">121.27</stationLon>
+            <stationLat unit="度">24.14</stationLat>
+            <distance unit="公里">31.60</distance>
+            <azimuth unit="度">139.32</azimuth>
+            <stationIntensity unit="級">2</stationIntensity>
+            <pga unit="gal">
+              <vComponent>0.90</vComponent>
+              <nsComponent>1.97</nsComponent>
+              <ewComponent>2.63</ewComponent>
+            </pga>
+            <infoStatus>observe</infoStatus>
+          </eqStation>
+        </shakingArea>
+        <shakingArea>
+          <areaDesc>宜蘭縣地區</areaDesc>
+          <areaName>宜蘭縣</areaName>
+          <areaIntensity unit="級">1</areaIntensity>
+          <infoStatus>observe</infoStatus>
+          <eqStation>
+            <stationName>南山</stationName>
+            <stationCode>NNS</stationCode>
+            <stationLon unit="度">121.38</stationLon>
+            <stationLat unit="度">24.44</stationLat>
+            <distance unit="公里">57.38</distance>
+            <azimuth unit="度">170.45</azimuth>
+            <stationIntensity unit="級">1</stationIntensity>
+            <pga unit="gal">
+              <vComponent>0.12</vComponent>
+              <nsComponent>0.84</nsComponent>
+              <ewComponent>0.66</ewComponent>
             </pga>
             <infoStatus>observe</infoStatus>
           </eqStation>
         </shakingArea>
         <shakingArea>
           <areaDesc>最大震度3級地區</areaDesc>
-          <areaName>宜蘭縣</areaName>
+          <areaName>花蓮縣</areaName>
           <areaIntensity unit="級">3</areaIntensity>
         </shakingArea>
         <shakingArea>
           <areaDesc>最大震度2級地區</areaDesc>
-          <areaName>花蓮縣</areaName>
+          <areaName>南投縣</areaName>
           <areaIntensity unit="級">2</areaIntensity>
+        </shakingArea>
+        <shakingArea>
+          <areaDesc>最大震度1級地區</areaDesc>
+          <areaName>宜蘭縣</areaName>
+          <areaIntensity unit="級">1</areaIntensity>
         </shakingArea>
       </intensity>
       <reportRemark>本報告係中央氣象局地震觀測網即時地震資料地震速報之結果。</reportRemark>

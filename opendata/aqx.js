@@ -22,7 +22,7 @@ const wget = require('node-wget');
 const configPrefix = process.env.NODE_ENV === 'development' ? (process.env.NODE_DEV === 'local' ? 'loc_' : 'dev_') : '';
 const Config = require(appRoot + '/config/' + configPrefix + 'config');
 
-var Logger = Helper.logger('aqx_RSS_Feed');
+// var Logger = Helper.logger('aqx_RSS_Feed');
 
 var aqxFeedGenerator = (function(){
     var result = {};
@@ -35,7 +35,8 @@ var aqxFeedGenerator = (function(){
                     timeout: 2000       // duration to wait for request fulfillment in milliseconds, default is 2 seconds
                 },function (error, response, body) {
                     if (error) {
-                        Logger.error(error);        // error encountered
+                        // Logger.error(error);        // error encountered
+                        console.error(error);
                         reject(null);
                     } else {
                         resolve(JSON.parse(body));
